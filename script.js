@@ -48,7 +48,18 @@ arrStudenti.forEach(object => {
 //   console.log(object)
 // });
 
+const nuovoStudente = {}
+const nome = prompt('Inserisci il tuo nome');
+const cognome = prompt('Inserisci il tuo cognome');
+const eta = prompt('Inserisci la tua età');
 
+nuovoStudente.Nome = nome;
+nuovoStudente.Cognome = cognome
+nuovoStudente.Eta = eta;
+
+arrStudenti.push(nuovoStudente);
+
+console.log(arrStudenti);
 
 
 
