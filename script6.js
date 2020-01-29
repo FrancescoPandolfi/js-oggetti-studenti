@@ -5,14 +5,14 @@ $(document).ready(function () {
 //   Creare un oggetto che descriva uno studente con le seguenti proprietà: nome, cognome e età. Stampare a schermo attraverso il for in tutte le proprietà.
 
 
-  var studente = {
+  const studente = {
     'Nome' : 'Giovanna',
     'Cognome' : 'D’arco',
     'eta' : 608
   };
 
-for (var key in studente) {
-  var li = $('.template li').clone().append(studente[key]);
+for (let key in studente) {
+  let li = $('.template li').clone().append(studente[key]);
   $('.primaparte').append(li);
 }
 
@@ -21,7 +21,7 @@ for (var key in studente) {
 // Ciclare su tutti gli studenti e stampare per ognuno nome e cognome
 
 
-  var arrStudenti = [
+  const arrStudenti = [
     {
       'Nome' : 'Giovanna',
       'Cognome' : 'D’arco',
@@ -39,8 +39,8 @@ for (var key in studente) {
     }
   ];
 
-arrStudenti.forEach(function(object) {
-  var li = $('.template li').clone().append('Nome e cognome studente :' + object.Nome + ' ' + object.Cognome);
+arrStudenti.forEach(object => {
+  let li = $('.template li').clone().append(`Nome e cognome studente : ${object.Nome} ${object.Cognome}`);
   $('.secondaparte').append(li);
 });
 
@@ -48,10 +48,10 @@ arrStudenti.forEach(function(object) {
 
 // Dare la possibilità all’utente attraverso 3 prompt di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
 
-var nuovoStudente = {}
-var nome = prompt('Inserisci il tuo nome');
-var cognome = prompt('Inserisci il tuo cognome');
-var eta = prompt('Inserisci la tua età');
+const nuovoStudente = {}
+const nome = prompt('Inserisci il tuo nome');
+const cognome = prompt('Inserisci il tuo cognome');
+const eta = prompt('Inserisci la tua età');
 
 nuovoStudente.Nome = nome;
 nuovoStudente.Cognome = cognome
@@ -60,8 +60,8 @@ nuovoStudente.Eta = eta;
 arrStudenti.push(nuovoStudente);
 
 
-arrStudenti.forEach(function(object) {
-  let li = $('.template li').clone().append('Nome e cognome studente :' + object.Nome + ' ' + object.Cognome);
+arrStudenti.forEach(object => {
+  let li = $('.template li').clone().append(`Nome e cognome studente : ${object.Nome} ${object.Cognome}`);
   $('.terzaparte').append(li);
 });
 
