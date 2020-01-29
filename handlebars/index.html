@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+  crossorigin="anonymous"></script>
+
+  <!-- Handlebars -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.2/handlebars.min.js" charset="utf-8"></script>
+
+  <title>Document</title>
+</head>
+<body>
+
+
+<input class="mex" type="text" name="" value="" placeholder="Scrivi il tuo messaggio">
+
+<button class="invia" type="button" name="button">INVIA</button>
+
+<ul class=".mex-container">
+
+</ul>
+
+
+
+  <script id="entry-template" type="text/x-handlebars-template">
+    <li class="entry">
+        {{messaggio}}
+    </li>
+  </script>
+
+  <script src="script.js" charset="utf-8"></script>
+</body>
+</html>
