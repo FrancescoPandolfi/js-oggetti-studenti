@@ -1,9 +1,9 @@
 $(document).ready(function () {
 
-
+var mexSent;
 $(document).on("click", '.invia', function () {
-  var mexSent = $('.mex').val();
-});
+
+  mexSent = $('.mex').val();
 
 
   var source = $("#entry-template").html();
@@ -15,5 +15,7 @@ $(document).on("click", '.invia', function () {
   var html = template(context);
 
   $(".mex-container").append(html);
+
+  });
 
 });
