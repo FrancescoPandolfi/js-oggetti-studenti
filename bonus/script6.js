@@ -1,3 +1,9 @@
+
+
+// Stesso esercizio in JS ES 6
+
+
+
 $(document).ready(function () {
 
 
